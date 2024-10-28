@@ -23,7 +23,7 @@ const SignUp: React.FC = () => {
                 </div>
                 <nav>
                     <ul>
-                        <li><a href="home.tsx">Home</a></li>
+                        <li><a href="index.tsx">Home</a></li>
                         <li><a href="profile.tsx">Profile</a></li>
                         <li><a href="courses.tsx">Courses</a></li>
                     </ul>
