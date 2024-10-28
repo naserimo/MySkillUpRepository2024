@@ -1,0 +1,317 @@
+/* Global dark mode styling */
+body {
+  background-color: #121212; /* Dark background */
+  color: #ffffff; /* Light text for readability */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Main content container to ensure footer stays at bottom */
+main {
+  flex: 1; /* Makes main content grow to fill space */
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #1e1e1e;
+}
+/* Logo alignment */
+.logo {
+  flex-grow: 0;
+  margin-right: auto; /* Ensures logo is on the left corner */
+}
+
+.logo img {
+  width: 150px; /* Adjust logo size as necessary */
+}
+
+/* Navigation styles */
+nav {
+  flex-grow: 1; /* Allows nav to take up remaining space */
+  display: flex;
+  justify-content: center; /* Center-aligns navigation links */
+}
+
+nav ul {
+  display: flex;
+  justify-content: center; /* This will center the items */
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 20px; /* Adds spacing between the nav items */
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+}
+
+.auth-box {
+  margin-left: auto;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Auth (login/signup) box on the right */
+.auth-box {
+  display: flex;
+  background-color: #5c4d8a; /* Dark purple background */
+  border-radius: 10px; /* Rounded corners */
+  padding: 10px;
+  margin-left: auto; /* Pushes login/signup to the far right */
+}
+
+.auth-link {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  transition: background-color 0.3s;
+}
+
+.auth-link:hover {
+  background-color: #4b3c6e; /* Darker purple on hover */
+  border-radius: 5px;
+}
+
+/* Optional styling for images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Center the image */
+}
+
+/* Courses container */
+.courses-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.course-box {
+  background-color: #1e1e1e;
+  border: 2px solid #333;
+  border-radius: 10px;
+  width: 300px;
+  margin: 15px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.course-box img {
+  object-fit: cover; /* Ensures image maintains aspect ratio */
+  width: 100%; /* Image takes full width of the box */
+  height: 200px; /* Consistent image height */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.course-box h3 {
+  color: #ffffff;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.course-box a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.course-box:hover {
+  transform: scale(1.05);
+  transition: 0.3s ease-in-out;
+}
+
+/* Footer styling */
+footer {
+  background-color: #1e1e1e; /* Same as header background */
+  color: #cccccc;
+  padding: 10px;
+  text-align: center;
+}
+
+body > footer {
+  position: static;
+  margin-top: 20px;
+}
+/* Hero section styles */
+.hero {
+  background-color: #282828;
+  color: #ffffff;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  background-color: #5c4d8a;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.cta-button:hover {
+  background-color: #4b3c6e;
+}
+
+/* About section styles */
+.about {
+  background-color: #1e1e1e;
+  color: #cccccc;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 16px;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+.dashboard h2 {
+  font-size: 36px;
+  color: #ffffff;
+}
+
+.dashboard .courses-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.dashboard .course-box {
+  background-color: #1e1e1e;
+  width: 300px;
+  margin: 15px;
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.dashboard .course-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.dashboard .course-box p {
+  color: #cccccc;
+  font-size: 16px;
+}
+.enroll-btn {
+  background-color: #5c4d8a; /* Dark purple background */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.enroll-btn:hover {
+  background-color: #4b3c6e; /* Darker purple on hover */
+}
+
+/* Profile Section Styling */
+.profile-section {
+  padding: 20px;
+  background-color: #1e1e1e;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-picture img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 20px;
+}
+
+.profile-info form {
+  width: 300px;
+  margin: 20px 0;
+}
+
+.profile-info input {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+}
+
+.profile-info label {
+  display: block;
+  margin-bottom: 5px;
+  color: #ccc;
+}
+
+.profile-info button {
+  background-color: #5c4d8a;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.profile-info button:hover {
+  background-color: #4b3c6e;
+}
+
+/* Dashboard Icon Styling */
+.dashboard-icon {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.dashboard-icon img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.dashboard-icon p {
+  color: #fff;
+  font-size: 18px;
+}
