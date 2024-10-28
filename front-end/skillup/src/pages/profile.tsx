@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import './styles.css'; // Assuming styles.css is in the same folder
+import '../styles/styles.css';
+
 
 const Profile: React.FC = () => {
     // Example state for controlled inputs
