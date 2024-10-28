@@ -22,9 +22,9 @@ const Login: React.FC = () => {
                 </div>
                 <nav>
                     <ul>
-                        <li><a href="home.html">Home</a></li>
-                        <li><a href="profile.html">Profile</a></li>
-                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="home.tsx">Home</a></li>
+                        <li><a href="profile.tsx">Profile</a></li>
+                        <li><a href="courses.tsx">Courses</a></li>
                     </ul>
                 </nav>
             </header>
