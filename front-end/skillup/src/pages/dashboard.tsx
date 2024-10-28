@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles.css'; // Assuming styles.css is in the same folder
+import '../styles/styles.css';
 
 const Dashboard: React.FC = () => {
     // Sample user progress data, could be dynamic from a database
